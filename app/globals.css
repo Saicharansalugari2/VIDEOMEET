@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ======== stream css overrides ======== */
+.str-video__call-stats {
+  max-width: 500px;
+  position: relative;
+}
+
+.str-video__speaker-layout__wrapper {
+  max-height: 700px;
+}
+
+.str-video__participant-details {
+  color: white;
+}
+
+.str-video__menu-container {
+  color: white;
+}
+
+.str-video__notification {
+  color: white;
+}
+
+.str-video__participant-list {
+  background-color: #1c1f2e;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  height: 100%;
+}
+
+/* Uniform size for call control buttons */
+.str-video__call-controls__button,
+.str-video__call-participant-button,
+.str-video__call-stats-button {
+  height: 50px;    /* Consistent button height */
+  width: 50px;     /* Consistent button width */
+  padding: 12px;   /* Adequate padding for the button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Uniform icon size */
+.str-video__call-controls__button svg,
+.str-video__call-participant-button svg,
+.str-video__call-stats-button svg {
+  width: 30px;     /* Uniform icon size */
+  height: 30px;    /* Uniform icon size */
+}
+
+/* On hover, scale the icons a little bigger */
+.str-video__call-controls__button:hover svg,
+.str-video__call-participant-button:hover svg,
+.str-video__call-stats-button:hover svg {
+  width: 35px;     /* Slightly bigger icons on hover */
+  height: 35px;
+}
+
+/* Hover effects for buttons */
+.str-video__call-controls__button:hover,
+.str-video__call-participant-button:hover,
+.str-video__call-stats-button:hover {
+  background-color: #2a2f40;
+  transform: scale(1.1); /* Slightly larger on hover */
+}
+
+/* Glassmorphism effect */
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.glassmorphism2 {
+  background: rgba(18, 17, 17, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* ==== clerk class override ===== */
+.cl-userButtonPopoverActionButtonIcon {
+  color: white;
+}
+
+.cl-logoBox {
+  height: 40px;
+}
+
+.cl-dividerLine {
+  background: #252a41;
+  height: 2px;
+}
+
+.cl-socialButtonsIconButton {
+  border: 3px solid #565761;
+}
+
+.cl-internal-wkkub3 {
+  color: white;
+}
+
+.cl-userButtonPopoverActionButton {
+  color: white;
+}
+
+/* =============================== */
+
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+}
+
+/* animation */
+.show-block {
+  width: 100%;
+  max-width: 350px;
+  display: block;
+  animation: show 0.7s forwards linear;
+}
+
+@keyframes show {
+  0% {
+    animation-timing-function: ease-in;
+    width: 0%;
+  }
+  100% {
+    animation-timing-function: ease-in;
+    width: 100%;
+  }
+}
