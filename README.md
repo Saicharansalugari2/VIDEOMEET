@@ -15,7 +15,7 @@ VideoMeet is a full-stack video conferencing application that replicates key Zoo
 - Framework: Next.js 14+ with App Router
 - Language: TypeScript
 - Auth: Clerk
-- Video SDK: Stream Video React SDK
+- Video SDK: Stream Video React-SDK
 - UI Library: Shadcn UI
 - Styling: Tailwind CSS
 
