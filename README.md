@@ -2,7 +2,7 @@ Hey,
 
 I BUILT 🎥 VideoMeet – Full Stack Video Conferencing App
 
-![App Screenshot](./public/images/picture.png)
+![App Screenshot](./images/picture.png)
 
 A video conferencing platform built with the latest Next.js, TypeScript, and Stream Video SDK, offering real-time meetings, secure authentication, scheduling, recordings, and more.
 
