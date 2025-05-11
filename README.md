@@ -2,6 +2,8 @@ Hey,
 
 I BUILT 🎥 VideoMeet – Full Stack Video Conferencing App
 
+View Project [here](https://videomeet-mu.vercel.app/).
+
 A video conferencing platform built with the latest Next.js, TypeScript, and Stream Video SDK, offering real-time meetings, secure authentication, scheduling, recordings, and more.
 
 🤖 Introduction
